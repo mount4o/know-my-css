@@ -1,0 +1,54 @@
+// Here is your main header stylings. You can modify all other, but in general
+// try to keep the header stylings in here.
+// 
+// Menu stylings file be found in components/mobile-menu
+
+
+.site-header {
+	position: relative;
+
+	&-inner {
+		min-height: 3.8125em;
+		justify-content: space-between;
+
+		.site-title {
+			color: #6A0B0B;
+		}
+
+		.subscribe-button {
+			background-color: black;
+			border-radius: $border-radius;
+			min-height: 2.5875em;
+			padding: 0.7em 0.875em 0.7em 0.875em;
+			line-height: 1.2em;
+		}
+		
+		.site-branding {
+			display: inline-block;
+		}
+
+		.mobile-nav-menu {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+    .site-header-inner {
+		.mobile-nav-menu {
+			display: unset;
+		}
+
+		.social-buttons .social-link {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 250px) {
+    .site-header-inner {
+		.social-buttons .subscribe-button {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.social-buttons {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+
+	.social-link {
+		display: flex;
+		width: 2.5875em;
+		height: 2.5875em;
+		background-color: #EBEBEB;
+		border-radius: $border-radius;
+
+		svg {
+			margin: auto;
+			display: block;
+		}
+	}
+}

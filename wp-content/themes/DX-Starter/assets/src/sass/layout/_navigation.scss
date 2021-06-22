@@ -1,0 +1,26 @@
+.navigation-bar {
+    position: relative;
+    border-top: 1px #DDD solid;
+    border-bottom: 1px #DDD solid;
+
+	&-inner {
+		justify-content: left;
+        min-height: 2.7em;
+        gap: 29.2em;
+
+        .navigation-categories, .navbar-utils {
+            gap: 2.5em;
+
+            .fa-cloud {
+                color: #D14343;
+            }
+        }
+        
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+    .navigation-bar .navigation-bar-inner {
+        display: none;
+	}
+}
